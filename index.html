@@ -1,4 +1,4 @@
-<title>How We League Highlights</title>
+<title>How We League</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
 <style>
@@ -222,7 +222,7 @@ th{font:500 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;col
 .links a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-weight:600;min-width:0}
 .links a span{min-width:0;overflow-wrap:anywhere}
 .links a i{font:500 12px var(--f-mono);font-style:normal;color:var(--muted)}
-.links .soon{display:flex;justify-content:space-between;align-items:center;gap:12px;grid-column:1/-1;background:color-mix(in srgb,#22c55e 14%,var(--surface));border:1px solid #22c55e;border-radius:14px;padding:14px 16px;font-weight:600;color:var(--ink)}
+.links .soon{margin-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;grid-column:1/-1;background:color-mix(in srgb,#22c55e 14%,var(--surface));border:1px solid #22c55e;border-radius:14px;padding:14px 16px;font-weight:600;color:var(--ink)}
 .links .soon span{display:flex;align-items:center;gap:10px;min-width:0}
 .links .soon span::before{content:'';width:10px;height:10px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 #22c55e99;animation:soonp 1.8s infinite;flex:none}
 .links .soon em{font:600 11px var(--f-mono);font-style:normal;letter-spacing:.1em;text-transform:uppercase;color:#16a34a;white-space:nowrap}
@@ -243,6 +243,22 @@ th{font:500 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;col
 .lh .u i{background:var(--s1)}
 .lh .d i{background:#e8665f}
 .lh-key{display:flex;justify-content:space-between;font:500 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+.pls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.pls .pl{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px;min-width:0}
+.pls .pl h3{margin:0 0 10px;font:700 17px var(--f-display);display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.pls .pl h3 a.lgl{display:block;padding:0;margin:0;color:var(--ink);text-decoration:none;font:inherit;min-width:0}
+.pls .pl h3 a.lgl:hover,.pls .pl h3 a.lgl:focus-visible{color:var(--s1);outline:none;background:none}
+.pls .pl h3 a.lgl span{font-size:13px;color:var(--muted)}
+.pls .pl h3 a.lgl::after{content:none}
+.pls .pl h3 small{font:500 12px var(--f-mono);color:var(--muted)}
+.pls .pl ol{margin:0;padding:0;list-style:none;display:grid;gap:2px}
+.pls .pl a{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:8px;align-items:center;text-decoration:none;color:var(--ink2);padding:6px 8px;margin:0 -8px;border-radius:8px;font-size:14px}
+.pls .pl a:hover,.pls .pl a:focus-visible{background:color-mix(in srgb,#1db954 14%,transparent);color:var(--ink);outline:none}
+.pls .pl a i{font:500 11px var(--f-mono);font-style:normal;color:var(--muted)}
+.pls .pl a span{min-width:0;overflow-wrap:anywhere}
+.pls .pl a::after{content:'▶';font-size:10px;color:#1db954;opacity:.0}
+.pls .pl a:hover::after,.pls .pl a:focus-visible::after{opacity:1}
+@media (max-width:760px){.pls{grid-template-columns:minmax(0,1fr)}}
 .links a:hover,.links a:focus-visible{border-color:var(--s1);outline:none}
 @media (max-width:640px){.links{grid-template-columns:minmax(0,1fr)}}
 .combo{position:relative}
@@ -522,22 +538,11 @@ footer li{margin:6px 0}
 </section>
 
 <section id="links">
-  <div class="kick2">Leagues</div>
+  <div class="kick2">Leagues and playlists</div>
   <h2>Open the leagues</h2>
-  <p class="lede">Each link opens that league in Music League.</p>
-  <div class="links">
-    <a href="https://app.musicleague.com/l/dc11dfc814dc4fd49d74b468c1178f1b/" target="_blank" rel="noopener"><span>DDM I: Music League</span><i>1</i></a>
-    <a href="https://app.musicleague.com/l/9f2dc448235e4cb3907aa755cc51501e/" target="_blank" rel="noopener"><span>DDM II: Core Value</span><i>2</i></a>
-    <a href="https://app.musicleague.com/l/e4ede47f399a47c690225fbbe5667f30/" target="_blank" rel="noopener"><span>DDM III: Spooky Season</span><i>3</i></a>
-    <a href="https://app.musicleague.com/l/fec68fe98b854ea5be7dd3a0338ce151/" target="_blank" rel="noopener"><span>DDM IV: A New Hope</span><i>4</i></a>
-    <a href="https://app.musicleague.com/l/ae60d6294096418a8038088fa74868be/" target="_blank" rel="noopener"><span>DDM V: V for Vendetta</span><i>5</i></a>
-    <a href="https://app.musicleague.com/l/53219d8498534ea7bf5fae8a2f75fd8a/" target="_blank" rel="noopener"><span>DDM VI: The Playlist of the Beast</span><i>6</i></a>
-    <a href="https://app.musicleague.com/l/2fc24cd8d6114fc7881d9b91ebb8745a/" target="_blank" rel="noopener"><span>DDM VII: Lucky 7</span><i>7</i></a>
-    <a href="https://app.musicleague.com/l/89c019f5de4f4c4eaed69fff9902c4a0/" target="_blank" rel="noopener"><span>People VIII: People Infinity</span><i>8</i></a>
-    <a href="https://app.musicleague.com/l/08d06665dca24981be11770c595a1dee/" target="_blank" rel="noopener"><span>People IX: The Whole 9 Yards</span><i>9</i></a>
-    <a href="https://app.musicleague.com/l/c143944bce6b4420be4a9c97b299ec8b/" target="_blank" rel="noopener"><span>People X: 1010 Wins</span><i>10</i></a>
-    <a class="soon" href="https://app.musicleague.com/l/3917b9f1ae2548b693ba1d888e040d91/" target="_blank" rel="noopener"><span>People XI: Track 11</span><em>11th season · starting soon</em></a>
-  </div>
+  <p class="lede">Each league name opens it in Music League. Each round opens its playlist in Spotify.</p>
+  <div class="pls" id="pls"></div>
+  <div class="links"><a class="soon" href="https://app.musicleague.com/l/3917b9f1ae2548b693ba1d888e040d91/" target="_blank" rel="noopener"><span>People XI: Track 11</span><em>11th season · starting soon</em></a></div>
 </section>
 
 <footer>
@@ -57009,6 +57014,623 @@ null
 ]
 }
 ],
+"playlists": {
+"10": [
+{
+"r": 1,
+"t": "Zoo Trip",
+"id": "6zTpdEByR5O2XSJRVGXJJF"
+},
+{
+"r": 2,
+"t": "It's A Terrible Day For Rain",
+"id": "2gizfS7icl9vda5ChrpWfs"
+},
+{
+"r": 3,
+"t": "Drop The Ball",
+"id": "4htS9RzRa5re4Q2eYv3fVF"
+},
+{
+"r": 4,
+"t": "SUPERHOTFIRE",
+"id": "3nxR24r3ku9K27v7Lyi5Xu"
+},
+{
+"r": 5,
+"t": "Classic Rock Era",
+"id": "3y1vA8WiutzaD4J1PAfVa5"
+},
+{
+"r": 6,
+"t": "Blame it on the bits",
+"id": "7kqQYBktzNRaW00v9sXnhz"
+},
+{
+"r": 7,
+"t": "Alliteration",
+"id": "14lU03IGeZagg57smXdBUg"
+},
+{
+"r": 8,
+"t": "3'o Clock Somewhere!",
+"id": "3neay2p1ONDyMuhWPEBEzf"
+},
+{
+"r": 9,
+"t": "Dad Jams",
+"id": "6UQtJJoZCAxXRNBVuE0M95"
+},
+{
+"r": 10,
+"t": "27 Forever",
+"id": "6lZJmeB6QGriNmT5fbvK6A"
+},
+{
+"r": 11,
+"t": "Do It Live",
+"id": "6SjGT1C9ZMZ5RMb0DAxr5B"
+},
+{
+"r": 12,
+"t": "New Hip Replacement",
+"id": "4Qdsu1Ey8r59G3LFSSUqwX"
+}
+],
+"9": [
+{
+"r": 1,
+"t": "Literary Listening",
+"id": "6CY1TusY5ThBSCyEeNZr6Y"
+},
+{
+"r": 2,
+"t": "I Wanna Dance with Somebody",
+"id": "4pUrukcAXwNH9QD76wwHeO"
+},
+{
+"r": 3,
+"t": "What's My Age Again?",
+"id": "4c6VEwj88tnnuYZFndqYPe"
+},
+{
+"r": 4,
+"t": "Skin Deep",
+"id": "1r4nKks7cjS8kY5ypM0CiT"
+},
+{
+"r": 5,
+"t": "OG HipHop",
+"id": "4xuj7J2lcrPeCkuL4HmK5L"
+},
+{
+"r": 6,
+"t": "Make it stoooooooop",
+"id": "2llTh33DJSZQeYWzRBYHwB"
+},
+{
+"r": 7,
+"t": "Pride Revival",
+"id": "2OH0nmUaPCPaIYnDzh5S9S"
+},
+{
+"r": 8,
+"t": "Short & Sweet",
+"id": "7mbSVEU09d2KJSeNcrSoco"
+},
+{
+"r": 9,
+"t": "Instrumental, Dear Watson",
+"id": "5wZupjUiZNwoGvlDuYtsDc"
+},
+{
+"r": 10,
+"t": "A Musical Feast",
+"id": "4jTUw0AK4hGbF368gYGgTP"
+},
+{
+"r": 11,
+"t": "Sax & The City",
+"id": "3oEYTT5etf9sG4fpckzWXi"
+},
+{
+"r": 12,
+"t": "Deep Focus",
+"id": "2mJXoTvivqrfocxmOgDgPR"
+},
+{
+"r": 13,
+"t": "The Final Four - World Cup Edition",
+"id": "3QDEf7igtqsYnz9Od7UNMk"
+}
+],
+"8": [
+{
+"r": 1,
+"t": "Women Who Rock",
+"id": "4BD7PgEv6MxWS9ozJdZ3a7"
+},
+{
+"r": 2,
+"t": "Four (4) Letter Words",
+"id": "4yBApkaQM4q0ThTvQBEdIF"
+},
+{
+"r": 3,
+"t": "Baby, it's cold outside",
+"id": "3mLVaf55GJwr20FHbOPHUd"
+},
+{
+"r": 4,
+"t": "Dua Linga",
+"id": "2ibNBqelkbbzCQa1i1Qzpx"
+},
+{
+"r": 5,
+"t": "ICE-breakers",
+"id": "4Mwq95joqfYajyl1f2hGmu"
+},
+{
+"r": 6,
+"t": "Pump, Pump, Pump it up!",
+"id": "0AAkATWBud7JZasRNmWI4P"
+},
+{
+"r": 7,
+"t": "ICE Breakers",
+"id": "7LUsLtK20v9rHeXQ6tZf2I"
+},
+{
+"r": 8,
+"t": "On Tour",
+"id": "0ut4oo5kpt6MmBkn0GW6VK"
+},
+{
+"r": 9,
+"t": "Weather Report",
+"id": "0mnkTZv5ZReDBvpB4k70Gv"
+},
+{
+"r": 10,
+"t": "I Love the 80's",
+"id": "6Q7RrfJADMUdnVBX7cSZPR"
+},
+{
+"r": 11,
+"t": "We have Beef",
+"id": "5H8VP5TFuv2cfaRpAOVEEk"
+},
+{
+"r": 12,
+"t": "Title Screen",
+"id": "4MOzJHtUbP6Fg4Mc7JKzRw"
+},
+{
+"r": 13,
+"t": "Sweet, Sweet Velveeta",
+"id": "27eURjrOXNt70Gj9aN5vew"
+},
+{
+"r": 14,
+"t": "Taste the Rainbow 🌈",
+"id": "2NDXkOcyS31m4g1BlHDBZw"
+}
+],
+"7": [
+{
+"r": 1,
+"t": "Sweater Weather",
+"id": "0POWChvETmtrz9Ub4qdfVj"
+},
+{
+"r": 2,
+"t": "Summer Savings",
+"id": "1kp5lhLOEhjkguDatcvoYO"
+},
+{
+"r": 3,
+"t": "Track 7",
+"id": "3Koy3bOfIy3mZ1d0UpJVi3"
+},
+{
+"r": 4,
+"t": "State Lines",
+"id": "21VPiD60CbwCRIXPeAYapj"
+},
+{
+"r": 5,
+"t": "People Inc.",
+"id": "2JuVcr9vRvQI1KE8ejVMkt"
+},
+{
+"r": 6,
+"t": "Halloweenies",
+"id": "1IUneqGmiMY3Uu2p6cscJA"
+},
+{
+"r": 7,
+"t": "Check the Calendar",
+"id": "5TfqxvJcDYTvT73sR1qHGw"
+},
+{
+"r": 8,
+"t": "Life's a Highway pt II",
+"id": "0iMuhdFhfLos4mXIzkqIla"
+},
+{
+"r": 9,
+"t": "I got you, babe.",
+"id": "1f9Egv7RZL488h2R8mAKbr"
+},
+{
+"r": 10,
+"t": "Three's a company",
+"id": "3ioQbzkMLk51FbrlB0WXLH"
+},
+{
+"r": 11,
+"t": "\"Nothing's stronger than family\" - Dominic Toretto",
+"id": "6WZeMeQ4rIK7J3e0vCx1mA"
+},
+{
+"r": 12,
+"t": "Genre Gateway",
+"id": "1T5TgaFs3UjmCCw92ORUMe"
+}
+],
+"6": [
+{
+"r": 1,
+"t": "Party like it's 1999",
+"id": "5UXAdf7rJz6U05Sz1kzMWH"
+},
+{
+"r": 2,
+"t": "United Nations Summit",
+"id": "7HpWNOvCvPbDv8Os8tNNxo"
+},
+{
+"r": 3,
+"t": "Paradise Playlist - Island Beats",
+"id": "5b6Uit9dW2hJrzIigk9bbA"
+},
+{
+"r": 4,
+"t": "Now I heard it all - Obscure songs (Round 2)",
+"id": "7B9k5IBp7VjEJIwAmSRY1n"
+},
+{
+"r": 5,
+"t": "Number games",
+"id": "7flMpeqbMSX4M6PkIWasAh"
+},
+{
+"r": 6,
+"t": "Songs from Up over there",
+"id": "0BTDu7dwca6ZXI56q5pvlr"
+},
+{
+"r": 7,
+"t": "Picasso's works",
+"id": "5LgrY8tygXLjWygBwLzEPP"
+},
+{
+"r": 8,
+"t": "With Deliah",
+"id": "73d2muJnt1yMIp9jhY7Xjo"
+},
+{
+"r": 9,
+"t": "Who said Original is not fake?",
+"id": "7dS63IZsvKdXho99ninlwq"
+},
+{
+"r": 10,
+"t": "Locals only",
+"id": "7p5qq8EVpchaiIfLJo3xpS"
+},
+{
+"r": 11,
+"t": "First time for everything",
+"id": "4i1bjPT9dIVxsaa2PGNe6H"
+},
+{
+"r": 12,
+"t": "Final Request",
+"id": "5nKuomnwEJKhq3MmMzFGsf"
+}
+],
+"5": [
+{
+"r": 1,
+"t": "Party of 5",
+"id": "0XV81C8MP5W6QOXT6E4FyJ"
+},
+{
+"r": 2,
+"t": "April Rules: In Pranks We Trust",
+"id": "7oZv8r4m2r2SqCleZjbXJB"
+},
+{
+"r": 3,
+"t": "Free Sample!",
+"id": "1XPxZ34WwtVYb7RK0QxfcU"
+},
+{
+"r": 4,
+"t": "Video killed the radio star",
+"id": "2HxwCyt8noMo0WnXl02D7w"
+},
+{
+"r": 5,
+"t": "It's not a phase: Angsty edition",
+"id": "7Gnq64ZwotEJzVWASTlEw3"
+},
+{
+"r": 6,
+"t": "Terrible song (but a great album)",
+"id": "1CZg2Fbqz2jIBqVRHVPpBt"
+},
+{
+"r": 7,
+"t": "Music is the soundtrack of your life - Dick Clark",
+"id": "72wfpIjwIT6wZThY9Y6nnX"
+},
+{
+"r": 8,
+"t": "Hope Springs Eternal",
+"id": "7udcoeDSmPM77VZNoO35ze"
+},
+{
+"r": 9,
+"t": "Obscure songs only",
+"id": "4xi3foaBOy5bQiDgSUwQdp"
+},
+{
+"r": 10,
+"t": "LIVE from...",
+"id": "4dMSpr6m9fiBrMlWqiK57m"
+},
+{
+"r": 11,
+"t": "Celebrity-made",
+"id": "6kYQLKZMAWYvX6WUSelATS"
+},
+{
+"r": 12,
+"t": "Eww-board 100",
+"id": "6peTPnh5kXttMh1aRGZbmJ"
+}
+],
+"4": [
+{
+"r": 1,
+"t": "Album Openers",
+"id": "2Fpis6wTaEhshizmSbxPGP"
+},
+{
+"r": 2,
+"t": "The GOAT of 2024",
+"id": "5wc4KGINYYfzZMjB0isAqH"
+},
+{
+"r": 3,
+"t": "Holiday Spirits",
+"id": "3dfNywHGHjNh8iCaww9Tbs"
+},
+{
+"r": 4,
+"t": "Wrap it up",
+"id": "08cTK3UM6ZEvX8IjeAROOO"
+},
+{
+"r": 5,
+"t": "Riot Grrls",
+"id": "5FNo69D3UhhQkqNinhzG9l"
+},
+{
+"r": 6,
+"t": "Cozy Tunes",
+"id": "4dh6Q5mC7EPIvfPkMtDwgL"
+},
+{
+"r": 7,
+"t": "Acoustic Only (Unplugged)",
+"id": "1j565H0EPabhJLcp1QBlL2"
+},
+{
+"r": 8,
+"t": "Fashion Police",
+"id": "5P3JDVmkub0HavsbYy7dxt"
+},
+{
+"r": 9,
+"t": "Weird Instruments",
+"id": "4Q7le8z845vqIyVfSwKAkT"
+},
+{
+"r": 10,
+"t": "Cupid's Playlist",
+"id": "3mnPpsQYHljy1nIMu7lRMu"
+},
+{
+"r": 11,
+"t": "Who's that girl?",
+"id": "4VwppodZgtxLYipo3LTeC1"
+},
+{
+"r": 12,
+"t": "Album Closers",
+"id": "5KOFdpZcl2BGPt9XSW6ZdD"
+},
+{
+"r": 13,
+"t": "BONUS ROUND: March Madness",
+"id": "6h3rWNfRr2Bopeiru0cN5P"
+}
+],
+"3": [
+{
+"r": 1,
+"t": "Animal style",
+"id": "6aVwn3nTEoLiNPN043CS4u"
+},
+{
+"r": 2,
+"t": "Genre-bender",
+"id": "5XwylSYHvH5YSK7R8Gs7MK"
+},
+{
+"r": 3,
+"t": "DDR @ DDM",
+"id": "35wH8uHVLyfJzAG8sdBfbk"
+},
+{
+"r": 4,
+"t": "Tutti Frutti",
+"id": "7FXUAGDSJOnhfVmkyz4v81"
+},
+{
+"r": 5,
+"t": "The Futurists",
+"id": "6vkKGy6dxFoIqQcUhTcD58"
+},
+{
+"r": 6,
+"t": "NOBODY PUTS BEY IN A CORNER",
+"id": "7zMki0HrtSe9t7ejuHZ2D3"
+},
+{
+"r": 7,
+"t": "🎃👻🧌🐈‍⬛💀🕸️⚰️🧟🦇🍁🪦🍂🧛",
+"id": "1lVYsnJbaKqNRYM8JwhCoX"
+},
+{
+"r": 8,
+"t": "Workout jams",
+"id": "4dYjScdFwGY92PM3K7p8fE"
+},
+{
+"r": 9,
+"t": "Instrumental tracks",
+"id": "15r5hbeIIWkaZzn3oM61lr"
+},
+{
+"r": 10,
+"t": "Tearjerkers",
+"id": "7r2bTe0b8aTeZ2jZiO3yvw"
+},
+{
+"r": 11,
+"t": "🫡 Founding documents 🦃",
+"id": "2Ib41xl9snfs3n9kHRbGWR"
+}
+],
+"2": [
+{
+"r": 1,
+"t": "Initial thoughts",
+"id": "66oowFA6uJjn9VCbc9IZHN"
+},
+{
+"r": 2,
+"t": "Time traveler",
+"id": "3nAALCOWSgXh3QzydTP3IY"
+},
+{
+"r": 3,
+"t": "City dwellers",
+"id": "32bzykKZdnOu5a3sr5EfDU"
+},
+{
+"r": 4,
+"t": "First concert",
+"id": "10pbWteaGrBQLaTyhtP2sO"
+},
+{
+"r": 5,
+"t": "I'm afraid of Americans",
+"id": "321nwQvakvS8SZxEHV7VZH"
+},
+{
+"r": 6,
+"t": "Just a parenthetical",
+"id": "5bBszyt3AHknQqpoDJgbiA"
+},
+{
+"r": 7,
+"t": "2024 song of the summer",
+"id": "0dMQktPE890TTFkn5iAQCn"
+},
+{
+"r": 8,
+"t": "Your karaoke jam",
+"id": "5CNPOQgoHSPfiKN3xe0XiQ"
+},
+{
+"r": 9,
+"t": "Orange you glad...",
+"id": "5YmdJ5zDdOli2SwWxRTRq6"
+},
+{
+"r": 10,
+"t": "Closing tracks",
+"id": "6uVdpBOAVG1xIq0478rbnH"
+}
+],
+"1": [
+{
+"r": 1,
+"t": "Love/Hate Relationship",
+"id": "6iR5vxQpuGCjiCbzZKg2mt"
+},
+{
+"r": 2,
+"t": "Freshman Class",
+"id": "4OmZhgawvg635pDK1BsG3c"
+},
+{
+"r": 3,
+"t": "Covers / Pre-covers",
+"id": "1NgD7sAhnCN1JzQpSdWCvJ"
+},
+{
+"r": 4,
+"t": "Shorties",
+"id": "0fFJVycf3rPTnsh8eIaM1f"
+},
+{
+"r": 5,
+"t": "Walk-up songs",
+"id": "3f7dYnKQonQjXpuozvCoUi"
+},
+{
+"r": 6,
+"t": "Hometown hero",
+"id": "5AsAUCBzOyDZO2iC4WxLOK"
+},
+{
+"r": 7,
+"t": "Date Yourself",
+"id": "5v47Hq4GWnVtdKWNuGZIPn"
+},
+{
+"r": 8,
+"t": "Non-Hit Wonders",
+"id": "37gCWZpIlfrLQAiUjM1UDf"
+},
+{
+"r": 9,
+"t": "First Album",
+"id": "5EJZvr4hg4SwBO5q3QvIb0"
+},
+{
+"r": 10,
+"t": "Movie Magic",
+"id": "6dAZBsn0N7LW44Y7umrAzD"
+}
+]
+},
 "broad": [
 {
 "song": "Shoop",
@@ -57511,6 +58133,10 @@ $('fgb').innerHTML=D.forgot_big.map(r=>`<div class="pi"><b>${esc(r.song)}</b><sp
   }
   inp.addEventListener('input',run);
 })();
+
+/* leagues and playlists */
+(function(){const P=D.playlists||{},U={1:"https://app.musicleague.com/l/dc11dfc814dc4fd49d74b468c1178f1b/",2:"https://app.musicleague.com/l/9f2dc448235e4cb3907aa755cc51501e/",3:"https://app.musicleague.com/l/e4ede47f399a47c690225fbbe5667f30/",4:"https://app.musicleague.com/l/fec68fe98b854ea5be7dd3a0338ce151/",5:"https://app.musicleague.com/l/ae60d6294096418a8038088fa74868be/",6:"https://app.musicleague.com/l/53219d8498534ea7bf5fae8a2f75fd8a/",7:"https://app.musicleague.com/l/2fc24cd8d6114fc7881d9b91ebb8745a/",8:"https://app.musicleague.com/l/89c019f5de4f4c4eaed69fff9902c4a0/",9:"https://app.musicleague.com/l/08d06665dca24981be11770c595a1dee/",10:"https://app.musicleague.com/l/c143944bce6b4420be4a9c97b299ec8b/"};
+$('pls').innerHTML=Object.keys(U).map(Number).sort((a,b)=>a-b).map(i=>`<div class="pl"><h3><a class="lgl" href="${U[i]}" target="_blank" rel="noopener">${i}. ${esc(D.lgshort[i-1])} <span>↗</span></a><small>${(P[i]||[]).length} rounds</small></h3><ol>${(P[i]||[]).map(r=>`<li><a href="https://open.spotify.com/playlist/${r.id}" target="_blank" rel="noopener"><i>${r.r}</i><span>${esc(r.t)}</span></a></li>`).join('')}</ol></div>`).join('');})();
 
 /* highlights */
 (function(){
